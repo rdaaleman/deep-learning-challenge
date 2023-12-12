@@ -1,0 +1,30 @@
+Overview of the analysis: Explain the purpose of this analysis.
+The purpose of this analysis is to be able to see what factors (classification, organization type, etc) can be predicted the best applicants for venture funding. 
+
+Results: Using bulleted lists and images to support your answers, address the following questions:
+
+Data Preprocessing
+
+What variable(s) are the target(s) for your model?
+is_successful 
+What variable(s) are the features for your model?
+application_type, affilitation, classification, use_case, income_amt, status
+What variable(s) should be removed from the input data because they are neither targets nor features?
+EIN and Name 
+
+Compiling, Training, and Evaluating the Model
+
+How many neurons, layers, and activation functions did you select for your neural network model, and why?
+I used the numbers of neurons I used in order to best fit the model. When I used too little neurons it resulted in an underfitting. 
+The activation function I used was "ReLU" because it's the most common for hidden layers which I had two of 
+
+Were you able to achieve the target model performance?
+The final accuracy was 72.77% which is a pretty reliable accuracy of correctly classifying 72.77% of the samples. 
+
+What steps did you take in your attempts to increase model performance?
+Having 100 epochs helped to train the model multiple times to get a better accuracy and increase the performance. 
+
+Summary: Summarize the overall results of the deep learning model. Include a recommendation for how a different model could solve this classification problem, and then explain your recommendation.
+The losee was 0.5980 which is a little on the higher end and it would be better to have a lower loss to indicate a better-performing model 
+It could be helpful to utilize a confusion matrix instead to get more information of the model's performance. 
+
